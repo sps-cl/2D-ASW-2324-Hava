@@ -1,0 +1,62 @@
+:root {
+    --text: #FDE7E7;
+    --background: #050505;
+    --primary-color: #B32100;
+    --secondary-color: #1A1A19;
+    --accent: #FF542E;
+
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0px;
+
+    background-color:  var(--background);
+}
+
+.calculator {
+    border-radius: 10px;
+    padding: 20px;
+
+    background-color: var(--secondary-color);
+}
+.calculator table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+.calculator td {
+    text-align: center;
+
+    padding: 10px;
+}
+.calculator button {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 25px;
+
+    border: none;
+    cursor: pointer;
+    
+    background-color: var(--accent);
+    color: var(--text);
+}
+.calculator button:hover {
+    background-color: var(--primary-color);
+}
+.calculator #display {
+    margin: 0px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+
+    color: var(--text);
+
+    /*If the number is too long it fucks up the table TOO BAD*/
+}
