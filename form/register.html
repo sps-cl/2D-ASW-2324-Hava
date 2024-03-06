@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Go Back</a>
+        </nav>
+        <form action="dashboard.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="1password">Password:</label>
+            <input type="password" id="1password" name="1password" required oninput="checkPasswords()">
+            <label for="2password">Retype Password:</label>
+            <input type="password" id="2password" name="2password" required oninput="checkPasswords()">
+            
+            <input type="submit" value="Submit" id="submitButton" disabled>
+            
+            <script>
+                function checkPasswords() {
+                    var password1 = document.getElementById("1password").value;
+                    var password2 = document.getElementById("2password").value;
+                    var submitButton = document.getElementById("submitButton");
+                    
+                    if (password1 === password2) {
+                        submitButton.disabled = false;
+                    } else {
+                        submitButton.disabled = true;
+                    }
+                }
+            </script>
+        </form>
+    </body>
+</html>
