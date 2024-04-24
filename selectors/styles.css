@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+}
+.red {
+    background-color: red;
+    width: 100vw;
+    height: 50vh;
+}
+#green {
+    background-color: green;
+    width: 100vw;
+    height: 50vh;
+}
