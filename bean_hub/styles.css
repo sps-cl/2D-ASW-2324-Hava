@@ -1,0 +1,31 @@
+:root {
+    --text: #E5E7F9;
+    --background: #07081F;
+    --primary: #9197E7;
+    --secondary: #8B1E63;
+    --accent: #EA5F39;
+
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--background);
+}
+
+logo, button {
+    font-size: 50px;
+    color: var(--text);
+    background-color: transparent;
+    border: 0px;
+}
+h2 {
+    font-size: 25px;
+    color: var(--text);
+}
+img, iframe{
+    height: 250px;
+}
+.highlight {
+    background-color: var(--accent);
+}
